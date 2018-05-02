@@ -1,4 +1,8 @@
 package com.algo.calender;
+
+import java.util.Collections;
+import java.util.PriorityQueue;
+
 class Person{
 	  int birth;
 	  int death;
@@ -9,6 +13,7 @@ class Person{
 	}
 	class FindYearWithPeopleAlive {
 	  public static void main(String[] args) {
+		  PriorityQueue<Integer> pq=new PriorityQueue<Integer>(Collections.reverseOrder());
 	    Person[] people=new Person[8];
 	    people[0]=new Person(2000,2010);
 	    people[1]=new Person(1975,1986);
