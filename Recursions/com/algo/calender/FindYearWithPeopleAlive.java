@@ -1,4 +1,4 @@
-package com.algo.calender;
+package com.algo.algorithms.calender;
 
 import java.util.Collections;
 import java.util.PriorityQueue;

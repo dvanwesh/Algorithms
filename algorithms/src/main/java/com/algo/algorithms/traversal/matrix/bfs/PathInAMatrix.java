@@ -1,10 +1,19 @@
-package com.algo.algorithms.bfs;
-
-import java.util.*;
+package com.algo.algorithms.traversal.matrix.bfs;
 
 /*
  * this class has methods that calculate the shortest path between two points in a matrix
  */
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.Queue;
+import java.util.Set;
+
 /**
  * 
  * @author vdatla
@@ -87,7 +96,7 @@ class PathInAMatrix {
 		Set<Point> visited = new HashSet<>();
 		if (matrix == null || !isValidPoint(source, matrix) || !isValidPoint(target, matrix))
 			return res;
-		Queue<Point> queue = new LinkedList<Point>();
+		Queue<Point> queue = new LinkedList<>();
 		queue.add(source);
 		Map<Point, Point> map = new HashMap<>(); //map to store parent child
 		visited.add(source);
